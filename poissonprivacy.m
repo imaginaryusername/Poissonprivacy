@@ -16,7 +16,7 @@ for i = 1:rounds
     % fill in the random delays for each connection. Row -> Column. (i.e. delay
     % from node 1 to 2 is at (1,2)
     
-    nodematrix = poissrnd(lambda,17,17);
+    nodematrix = exprnd(lambda,17,17);
     
     % nodes don't send to themselves!
     
